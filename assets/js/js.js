@@ -40,3 +40,32 @@ $('#pinterest').click(function () {
 $('#facebook').click(function () {
     location.href = 'http://www.facebook.com';
 });
+
+// 라우터?
+$('#click_banner').click(function () {
+    $('#banner').css('display', 'flex');
+    $('#projects').css('display', 'none');
+    $('#gallery').css('display', 'none');
+    $('#contact').css('display', 'none');
+})
+
+$('#click_projects').click(function () {
+    $('#banner').css('display', 'none');
+    $('#projects').css('display', 'block');
+    $('#gallery').css('display', 'none');
+    $('#contact').css('display', 'none');
+})
+
+$('#click_gallery').click(function () {
+    $('#banner').css('display', 'none');
+    $('#projects').css('display', 'none');
+    $('#gallery').css('display', 'block');
+    $('#contact').css('display', 'none');
+})
+
+$('#click_contact').click(function () {
+    $('#banner').css('display', 'none');
+    $('#projects').css('display', 'none');
+    $('#gallery').css('display', 'none');
+    $('#contact').css('display', 'block');
+})

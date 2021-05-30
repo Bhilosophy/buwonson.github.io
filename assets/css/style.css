@@ -26,7 +26,6 @@ img {
 }
 
 header {
-  position: fixed;
   background-color: #6d4c41;
   width: 100%;
   z-index: 2;
@@ -52,18 +51,21 @@ header .menu-bar ul {
   align-items: center;
 }
 
-header .menu-bar a {
+header .menu-bar h3 {
+  cursor: pointer;
+  font-weight: normal;
   margin-left: 20px;
   font-size: 20px;
   text-decoration: none;
   color: #fff;
 }
 
+/* banner */
 main .banner {
   background-color: #fff;
-  min-height: 100vh;
   display: flex;
   align-items: center;
+  min-height: 100vh;
 }
 
 main .banner .container {
@@ -110,8 +112,11 @@ main .banner .container .column_2 .social-icons img {
   cursor: pointer;
 }
 
+/* projects */
 main .projects {
+  display: none;
   background-color: #efebe9;
+  min-height: 100vh;
 }
 
 main .projects .container {
@@ -139,7 +144,6 @@ main .projects .container .projects-box .project {
   border: 1px solid #a1887f;
   border-radius: 8px;
   background-color: #fff;
-  overflow: hidden;
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
   margin-top: 16px;
 }
@@ -154,19 +158,51 @@ main .projects .container .projects-box .project .content-box {
 
 main .projects .container .projects-box .project .content-box h3 {
   padding-bottom: 16px;
+  margin: 5px;
 }
 
-main .contact {
+/*  Gallery */
+main .gallery {
+  display: none;
+  background-color: #efebe9;
+  min-height: 100vh;
+}
+
+main .gallery h2 {
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 32px;
+  font-size: 32px;
+  color: #3e2723;
+}
+
+main .gallery .gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+main .gallery .gallery-container .img-box {
+  margin: 10px;
+  flex-basis: 22%;
+  border: 1px solid #a1887f;
+  border-radius: 8px;
   background-color: #fff;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-main .contact .contact-container {
-  max-width: 1050px;
-  width: 100%;
-  margin: 10px auto;
+main .gallery .gallery-container .img-box img {
+  border-radius: 10px;
 }
 
-main .contact .contact-container h2 {
+/* Contact */
+main .contact {
+  display: none;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+main .contact h2 {
   text-align: center;
   margin-top: 48px;
   margin-bottom: 32px;
@@ -174,31 +210,31 @@ main .contact .contact-container h2 {
   color: #3e2723;
 }
 
-main .contact .contact-container .contact-box {
+main .contact .contact-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  padding-left: 9%;
+  padding-right: 9%;
 }
 
-main .contact .contact-container .contact-box .img-box {
-  flex-basis: 60%;
+main .contact .contact-container .img-box {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-main .contact .contact-container .contact-box .img-box img {
-  width: 100%;
+main .contact .contact-container .img-box img {
+  width: 70%;
 }
 
-main .contact .contact-container .contact-box form {
-  flex-basis: 40%;
+main .contact .contact-container form {
+  flex-basis: 50%;
 }
 
-main .contact .contact-container .contact-box .form-box {
-  padding: 0 10px;
-}
-
-main .contact .contact-container .contact-box .form-elements,
+main .contact .contact-container .form-elements,
 .form-textarea {
-  width: 100%;
+  width: 80%;
   padding: 16px;
   margin: 10px 0;
   color: #000;
@@ -211,11 +247,11 @@ main .contact .contact-container .contact-box .form-elements,
   background-color: #efebe9;
 }
 
-main .contact .contact-container .contact-box .button {
+main .contact .contact-container .button {
   cursor: pointer;
   padding: 10px;
   border: none;
-  width: 100%;
+  width: 80%;
   background: #6d4c41;
   color: #fff;
   border-radius: 5px;
@@ -270,15 +306,24 @@ main .contact .contact-container .contact-box .button {
     justify-content: center;
   }
 
-  main .projects .container .projects-box .project .content-box p {
+  main .gallery .gallery-container .img-box {
+    flex-basis: 45%;
+  }
+
+  main .contact .contact-container .img-box {
     display: none;
   }
 
-  main .contact .contact-container .contact-box .img-box {
-    display: none;
-  }
-
-  main .contact .contact-container .contact-box form {
+  main .contact .contact-container form {
     flex-basis: 100%;
+  }
+
+  main .contact .contact-container .form-elements,
+  .form-textarea {
+    width: 100%;
+  }
+
+  main .contact .contact-container .button {
+    width: 100%;
   }
 }

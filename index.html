@@ -17,9 +17,10 @@
             <h2>BUWON SON</h2>
             <div class="menu-bar">
                 <ul>
-                    <li><a href="#banner">HOME</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><h3 href="#" id="click_banner">HOME</h3></li>
+                    <li><h3 href="#" id="click_projects">PROJECTS</h3></li>
+                    <li><h3 href="#" id="click_gallery">GALLERY</h3></li>
+                    <li><h3 href="#" id="click_contact">CONTACT</h3></li>
                 </ul>
             </div>
         </div>
@@ -148,29 +149,46 @@
             </div>
         </section>
 
+        <!-- Gallery -->
+        <section id="gallery" class="gallery">
+            <h2>GALLERY</h2>
+            <div class="gallery-container">
+                <div class="img-box">
+                    <img src="./assets/images/drawing-1.jpg">
+                </div>
+                <div class="img-box">
+                    <img src="./assets/images/drawing-2.jpg">
+                </div>
+                <div class="img-box">
+                    <img src="./assets/images/drawing-3.jpg">
+                </div>
+                <div class="img-box">
+                    <img src="./assets/images/drawing-4.jpg">
+                </div>
+            </div>
+        </section>
+
         <!-- contact -->
         <section id="contact" class="contact">
+            <h2>CONTACT</h2>
             <div class="contact-container">
-                <h2>CONTACT</h2>
-                <div class="contact-box">
-                    <div class="img-box">
-                        <img src="./assets/images/contact-1.png" class="img">
-                    </div>
-                    <form action="#">
-                        <div class="form-box">
-                            <input type="text" name="name" id="name" placeholder="name" class="form-elements">
-                        </div>
-                        <div class="form-box">
-                            <input type="email" name="email" id="email" placeholder="email" class="form-elements">
-                        </div>
-                        <div class="form-box">
-                            <textarea name="msg" id="msg" placeholder="message" class="form-textarea"></textarea>
-                        </div>
-                        <div class="form-box">
-                            <input type="submit" value="Send Message" class="button">
-                        </div>
-                    </form>
+                <div class="img-box">
+                    <img src="./assets/images/contact-1.png" class="img">
                 </div>
+                <form action="#">
+                    <div class="form-box">
+                        <input type="text" name="name" id="name" placeholder="name" class="form-elements">
+                    </div>
+                    <div class="form-box">
+                        <input type="email" name="email" id="email" placeholder="email" class="form-elements">
+                    </div>
+                    <div class="form-box">
+                        <textarea name="msg" id="msg" placeholder="message" class="form-textarea"></textarea>
+                    </div>
+                    <div class="form-box">
+                        <input type="submit" value="Send Message" class="button">
+                    </div>
+                </form>
             </div>
         </section>
     </main>
