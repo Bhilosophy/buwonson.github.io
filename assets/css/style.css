@@ -26,11 +26,11 @@ img {
 }
 
 header {
-  background-color: #6d4c41;
-  z-index: 2;
   position: fixed;
-  top: 0;
+  background-color: #6d4c41;
   width: 100%;
+  z-index: 2;
+  top: 0;
 }
 
 header .container {
@@ -61,7 +61,6 @@ header .menu-bar a {
 
 main .banner {
   background-color: #fff;
-  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -94,6 +93,10 @@ main .banner .container .column_2 {
 
 main .banner .container .column_2 h1 {
   color: #3e2723;
+}
+
+main .banner .container .column_2 #mobile_p {
+  display: none;
 }
 
 main .banner .container .column_2 .social-icons {
@@ -165,6 +168,7 @@ main .contact .contact-container {
 
 main .contact .contact-container h2 {
   text-align: center;
+  margin-top: 48px;
   margin-bottom: 32px;
   font-size: 32px;
   color: #3e2723;
@@ -240,9 +244,24 @@ main .contact .contact-container .contact-box .button {
     display: block;
   }
 
-  main .banner .container .column_2 h1,
-  p {
+  main .banner .container .column_1 img {
+    margin-top: 30px;
+    width: 200px;
+  }
+
+  main .banner .container .column_2 h1 {
+    font-size: 24px;
+    margin: 18px 0;
+    text-align: center;
+  }
+
+  main .banner .container .column_2 #web_p {
     display: none;
+  }
+
+  main .banner .container .column_2 #mobile_p {
+    display: block;
+    text-align: center;
   }
 
   main .banner .container .social-icons {
