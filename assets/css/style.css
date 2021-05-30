@@ -179,13 +179,13 @@ main .gallery h2 {
 main .gallery .gallery-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 main .gallery .gallery-container .img-box {
   margin: 10px;
-  flex-basis: 22%;
   border: 1px solid #a1887f;
+  flex-basis: 25%;
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
@@ -259,7 +259,7 @@ main .contact .contact-container .button {
 
 @media (max-width: 768px) {
   main .projects .container .projects-box .project {
-    flex-basis: 48%;
+    flex-basis: 50%;
   }
 }
 
@@ -307,7 +307,7 @@ main .contact .contact-container .button {
   }
 
   main .gallery .gallery-container .img-box {
-    flex-basis: 45%;
+    flex-basis: 40%;
   }
 
   main .contact .contact-container .img-box {

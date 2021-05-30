@@ -24,6 +24,16 @@ $('.project').hover(function() {
     }, 500);
 });
 
+$('.gallery-box').hover(function() {
+    $(this).animate({
+        opacity: 0.5
+    }, 500);
+    }, function() {
+    $(this).animate({
+        opacity: 1.0
+    }, 500);
+});
+
 // click시 WebStie 이동
 $('#twitter').click(function () {
     location.href = 'http://www.twitter.com';
